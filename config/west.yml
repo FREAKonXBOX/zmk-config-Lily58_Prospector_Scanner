@@ -7,7 +7,6 @@ manifest:
     - name: penguinchat
       url-base: https://github.com/penguinchat
   projects:
-    projects:
     - name: zmk
       remote: zmkfirmware
       revision: v0.3
