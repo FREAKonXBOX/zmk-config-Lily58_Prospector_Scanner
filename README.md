@@ -1,0 +1,1 @@
+# zmk-config-Lily58_Prospector_Scanner
