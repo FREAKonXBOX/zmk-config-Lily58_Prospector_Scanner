@@ -1,8 +1,8 @@
 file_format: "1"
-id: lily58_dongle
-name: Lily58_dongle
+id: lily58
+name: Lily58
 type: shield
-url: https://pandakb.com
+url: https://github.com/turbotfish
 requires: [nice!nano]
 exposes: [i2c_oled]
 features:
@@ -13,6 +13,6 @@ features:
   - underglow
   - encoder
 siblings:
-  - Lily58_dongle_central
-  - Lily58_dongle_left
-  - Lily58_dongle_right
+  - Lily58_central
+  - Lily58_left
+  - Lily58_right

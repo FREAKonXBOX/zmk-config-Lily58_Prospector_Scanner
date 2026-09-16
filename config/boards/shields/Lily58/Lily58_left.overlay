@@ -4,12 +4,8 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include "Lily58_dongle.dtsi"
+#include "Lily58.dtsi"
 #include <dt-bindings/led/led.h>
-&default_transform {
-    col-offset = <6>;
-};
-
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
     row-gpios
@@ -20,18 +16,18 @@
         , <&pro_micro 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
     col-gpios
-        = <&pro_micro 10 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 16 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+        = <&pro_micro 19 GPIO_ACTIVE_HIGH>
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>
-        , <&pro_micro 19 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 15 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 14 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 16 GPIO_ACTIVE_HIGH>
+        , <&pro_micro 10 GPIO_ACTIVE_HIGH>
         ;
 };
-&right_encoder {
+
+&left_encoder {
     status = "okay";
 };
-
 // oled,I2c
 &pinctrl {
        i2c0_default: i2c0_default {
